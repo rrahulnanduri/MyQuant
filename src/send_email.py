@@ -2,7 +2,9 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+
 def send_signal_email(receiver_email, subject, message):
+    global server
     sender_email = "your_email@example.com"
     password = "your_password"
 
